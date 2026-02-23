@@ -18,7 +18,8 @@
 		"@biomejs/biome": "catalog:",
 		"@typescript/native-preview": "^7.0.0-dev.20260128.1",
 		"tsx": "^4.21.0",
-		"typescript": "^5.9.3"
+		"typescript": "^5.9.3",
+		"wrangler": "catalog:"
 	},
 	"packageManager": "pnpm@10.28.2"
 }

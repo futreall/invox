@@ -104,6 +104,9 @@ importers:
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
+      wrangler:
+        specifier: 'catalog:'
+        version: 4.67.0
 
   apps/invox:
     dependencies:
