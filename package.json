@@ -1,0 +1,31 @@
+{
+	"name": "@tempo/apps",
+	"private": true,
+	"type": "module",
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"scripts": {
+		"dev": "pnpm --filter invox dev",
+		"build": "pnpm --filter invox build",
+		"deploy": "pnpm --filter invox deploy",
+		"check": "pnpm --filter invox check",
+		"check:biome": "biome check --write --unsafe",
+		"check:types": "pnpm --filter invox check:types"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "catalog:",
+		"@typescript/native-preview": "^7.0.0-dev.20260128.1",
+		"tsx": "^4.21.0",
+		"typescript": "^5.9.3"
+	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": "24.12.0",
+			"onFail": "download"
+		}
+	},
+	"packageManager": "pnpm@10.28.2"
+}
